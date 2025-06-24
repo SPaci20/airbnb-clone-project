@@ -162,3 +162,18 @@ Lets users leave feedback about their stays and view reviews from others. This h
 5️⃣ Payment Processing
 Handles secure transactions for property bookings. It ensures that payments are recorded, tracked, and associated with the correct bookings.
 
+## API Security
+To protect user data and maintain system integrity, the AirBnB Clone project will implement key security measures:
+
+Authentication: Verifies user identity through secure methods like JWT, ensuring only authorized users can access the system.
+
+Authorization: Controls user permissions based on roles (guest, host), preventing unauthorized actions on resources.
+
+Rate Limiting: Restricts the number of API requests per user to prevent abuse and server overload.
+
+Data Validation: Ensures all input data is clean and secure, protecting against injection attacks.
+
+Secure Payments: Handles transactions through encrypted channels, safeguarding sensitive financial data.
+
+These measures are crucial to protect user accounts, personal information, and payments while keeping the platform reliable and secure.
+
