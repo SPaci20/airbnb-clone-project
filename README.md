@@ -54,3 +54,94 @@ Conduct regression, performance, and security testing
 -Docker: Containerization tool for consistent development and deployment environments.
 
 -CI/CD Pipelines: Automated pipelines for testing and deploying code changes.
+
+## Database Design
+This section outlines the core entities and their relationships within the AirBnB Clone project. The design ensures efficient data management for properties, bookings, users, and transactions.
+
+1️⃣ Users
+Represents individuals who can list properties, book accommodations, and leave reviews.
+
+Important Fields:
+
+id (Primary Key)
+
+name
+
+email
+
+password_hash
+
+user_type (e.g., host or guest)
+
+2️⃣ Properties
+Represents the accommodation listings available for booking.
+
+Important Fields:
+
+id (Primary Key)
+
+title
+
+description
+
+price_per_night
+
+owner_id (Foreign Key referencing Users)
+
+3️⃣ Bookings
+Records reservations made by users for specific properties.
+
+Important Fields:
+
+id (Primary Key)
+
+user_id (Foreign Key referencing Users)
+
+property_id (Foreign Key referencing Properties)
+
+start_date
+
+end_date
+
+4️⃣ Reviews
+Captures feedback from users regarding their stay at a property.
+
+Important Fields:
+
+id (Primary Key)
+
+user_id (Foreign Key referencing Users)
+
+property_id (Foreign Key referencing Properties)
+
+rating
+
+comment
+
+5️⃣ Payments
+Tracks financial transactions for bookings.
+
+Important Fields:
+
+id (Primary Key)
+
+booking_id (Foreign Key referencing Bookings)
+
+amount
+
+payment_date
+
+payment_method
+
+📎 Entity Relationships
+A User can list multiple Properties (one-to-many)
+
+A Property can receive multiple Bookings (one-to-many)
+
+A Booking belongs to one User and one Property (many-to-one)
+
+A Booking can have one Payment (one-to-one)
+
+A User can leave multiple Reviews, and each Review is for one Property (many-to-one)
+
+A Property can have multiple Reviews (one-to-many)
