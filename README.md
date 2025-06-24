@@ -177,3 +177,15 @@ Secure Payments: Handles transactions through encrypted channels, safeguarding s
 
 These measures are crucial to protect user accounts, personal information, and payments while keeping the platform reliable and secure.
 
+## CI/CD Pipeline
+Continuous Integration (CI) and Continuous Deployment (CD) are development practices that automate the process of building, testing, and deploying code changes. CI/CD pipelines help detect errors early, speed up development, and ensure the application remains reliable as new features are added.
+
+For this project, a CI/CD pipeline will automatically run tests, build the application, and deploy updates to the production environment. This reduces manual work and ensures consistent, error-free deployments.
+
+Tools that could be used include:
+
+GitHub Actions: Automates workflows like testing and deployment directly from the repository.
+
+Docker: Packages the application into containers for consistent deployment across environments.
+
+Heroku / Render / Vercel: Can be used for hosting and automatic deployments.
