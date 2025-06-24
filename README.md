@@ -145,3 +145,20 @@ A Booking can have one Payment (one-to-one)
 A User can leave multiple Reviews, and each Review is for one Property (many-to-one)
 
 A Property can have multiple Reviews (one-to-many)
+
+## Feature Breakdown
+1️⃣ User Management
+Allows users to create accounts, log in, and manage their profiles. This ensures that both hosts and guests have secure, personalized access to the platform.
+
+2️⃣ Property Management
+Enables hosts to add, update, and delete property listings. Each property can include details like descriptions, prices, and images for potential guests to view.
+
+3️⃣ Booking System
+Allows users to book available properties for specific dates. This feature manages booking requests, availability, and reservation confirmations.
+
+4️⃣ Review System
+Lets users leave feedback about their stays and view reviews from others. This helps build trust and improves the platform's credibility.
+
+5️⃣ Payment Processing
+Handles secure transactions for property bookings. It ensures that payments are recorded, tracked, and associated with the correct bookings.
+
